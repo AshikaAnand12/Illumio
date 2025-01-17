@@ -16,3 +16,6 @@ Time Complexity for processing the flow logs is O(N) where N is the number of li
 ### Space Complexity: 
 Space Complexity is O(K) + O(L) where K is the number of lines in the lookup table, and L is the number of unique tags.
 
+### Other Assumptions or Sources used
+1. AWS VPC Flow Log record: https://docs.aws.amazon.com/vpc/latest/userguide/flow-log-records.html
+2. Port and Protocol mapping extracted as .csv from https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml
