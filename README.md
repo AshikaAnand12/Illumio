@@ -7,9 +7,16 @@
 
 ## To test
 1. Change the input files:
-   a. lookup_table.csv - Enter look up table in .csv format
-   b. vpc_flow_log.txt - Provide log files in .txt format
+   * lookup_table.csv - Enter look up table in .csv format
+   * vpc_flow_log.txt - Provide log files in .txt format
 
+## Program Metrics and details
+
+### Data Structure:
+1. Tags - Dictionary -> {tagname:counter}
+2. Port, protocol, tags - Dictionary with Key as tuple and value as an array with tag as arr[0] and counter as arr[1] -> {(port,protocol):[tag,counter]}
+3. Port, Protocol - Dictionary -> {port:protocol}
+   
 ### Time Complexity 
 Time Complexity for processing the flow logs is O(N) where N is the number of lines in the logs
 
